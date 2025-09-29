@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pameran Batik Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-amber-800">Batik Indonesia</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="#home" class="hover:text-amber-600">Home</a>
+        <a href="#tentang" class="hover:text-amber-600">Tentang</a>
+        <a href="#sejarah" class="hover:text-amber-600">Sejarah</a>
+        <a href="#galeri" class="hover:text-amber-600">Galeri</a>
+      </nav>
+    </div>
+  </header>
+
+<!-- Hero Slider dengan overlay coklat batik -->
+<section id="home" class="pt-20 relative">
+  <div class="relative overflow-hidden">
+    <!-- Slider -->
+    <div id="slider" class="flex transition-transform duration-700">
+      <img src="bg.jpg"  class="w-screen flex-none h-[60vh] object-cover" />
+      <img src="bg2.jpg" class="w-screen flex-none h-[60vh] object-cover" />
+      <img src="bg3.jpg" class="w-screen flex-none h-[60vh] object-cover" />
+    </div>
+
+    <!-- Overlay gradasi coklat agar teks dan motif terlihat -->
+    <div class="absolute inset-0 bg-gradient-to-r from-amber-900/60 via-amber-800/60 to-amber-700/60"></div>
+
+    <!-- Motif batik transparan (pattern png / svg) -->
+    <div class="absolute inset-0 bg-[url('batik-overlay.png')] opacity-25 bg-repeat mix-blend-overlay"></div>
+
+    <!-- Teks Hero -->
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
+        Warisan Budaya Nusantara
+      </h1>
+      <p class="mt-4 text-lg md:text-xl max-w-2xl">
+       Keindahan Batik Indonesia Yang Mendunia.
+      </p>
+    </div>
+
+    <!-- Kontrol Slider -->
+    <button id="prev"
+      class="absolute left-5 top-1/2 -translate-y-1/2 bg-amber-100/70 hover:bg-amber-200 rounded-full p-2 text-amber-900">❮</button>
+    <button id="next"
+      class="absolute right-5 top-1/2 -translate-y-1/2 bg-amber-100/70 hover:bg-amber-200 rounded-full p-2 text-amber-900">❯</button>
+  </div>
+</section>
+
+
+
+
+  <!-- Tentang -->
+  <section id="tentang" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-6 text-amber-800">Tentang Batik Indonesia</h2>
+    <p class="leading-relaxed text-lg text-gray-700">
+      Batik Indonesia adalah warisan budaya dunia yang telah diakui UNESCO sejak tahun 2009. Setiap corak, warna, dan motif batik memiliki makna filosofis yang dalam, mencerminkan nilai kehidupan, alam, serta perjalanan sejarah bangsa. Batik bukan hanya sekadar kain, tetapi juga media ekspresi seni yang menggambarkan identitas dan jati diri masyarakat Indonesia. Hingga kini, batik dipakai dalam berbagai acara, baik resmi maupun sehari-hari, sebagai wujud kebanggaan budaya.
+    </p>
+  </section>
+
+  <!-- Sejarah -->
+  <section id="sejarah" class="bg-amber-50">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold mb-6 text-amber-800">Sejarah Batik Indonesia</h2>
+      <p class="leading-relaxed text-lg text-gray-700">
+       Sejarah batik telah ada sejak masa kerajaan-kerajaan Jawa kuno. Pada awalnya, batik berkembang di lingkungan keraton sebagai simbol status sosial dan spiritual, dengan motif tertentu yang hanya boleh dikenakan oleh bangsawan. Teknik pewarnaan kain menggunakan malam (lilin) kemudian menyebar ke berbagai daerah di Indonesia.
+
+Setiap daerah melahirkan ciri khasnya sendiri: <br>
+
+-Yogyakarta & Solo dengan batik warna sogan yang anggun dan motif parang. <br>
+
+-Cirebon dengan motif Megamendung yang ikonik. <br>
+
+-Lasem dengan warna merah menyala khas “Merah Lasem”.<br>
+
+-Pekalongan dengan batik pesisir yang cerah dan dinamis. <br>
+
+Perjalanan batik dari keraton hingga ke masyarakat luas menunjukkan bagaimana budaya ini mampu beradaptasi dengan zaman, sekaligus tetap mempertahankan nilai tradisi yang mendalam.
+      </p>
+    </div>
+  </section>
+
+<!-- === Galeri === -->
+<section id="galeri" class="max-w-7xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold mb-10 text-amber-800">Galeri Batik</h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+    <!-- 1 -->
+    <a href="single.html" class="group shadow hover:shadow-lg rounded-xl overflow-hidden bg-white">
+      <img src="kainjogja.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition" />
+      <div class="p-4">
+        <h3 class="font-semibold text-lg text-amber-800">Batik Yogyakarta</h3>
+        <p class="text-gray-600 text-sm">Motif klasik kerajaan Mataram.</p>
+      </div>
+    </a>
+
+    <!-- 2 -->
+    <a href="single1.html" class="group shadow hover:shadow-lg rounded-xl overflow-hidden bg-white">
+      <img src="kainsolo.jpg"class="w-full h-64 object-cover group-hover:scale-105 transition" />
+      <div class="p-4">
+        <h3 class="font-semibold text-lg text-amber-800">Batik Solo</h3>
+        <p class="text-gray-600 text-sm">Ciri khas warna sogan dan motif parang.</p>
+      </div>
+    </a>
+    
+    <!-- 3 -->
+    <a href="single2.html" class="group shadow hover:shadow-lg rounded-xl overflow-hidden bg-white">
+      <img src="kaincirebon.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition" />
+      <div class="p-4">
+        <h3 class="font-semibold text-lg text-amber-800">Batik Cirebon</h3>
+        <p class="text-gray-600 text-sm">Motif Mega Mendung yang ikonik</p>
+      </div>
+    </a>
+
+    <!-- 4 -->
+    <a href="single3.html" class="group shadow hover:shadow-lg rounded-xl overflow-hidden bg-white">
+      <img src="kainlasem.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition" />
+      <div class="p-4">
+        <h3 class="font-semibold text-lg text-amber-800">Batik Lasem</h3>
+        <p class="text-gray-600 text-sm">Perpaduan budaya Tionghoa & Jawa.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+  <footer class="bg-amber-800 text-white text-center py-6">
+    © 2025 Pameran Batik Indonesia
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
